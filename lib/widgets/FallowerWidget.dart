@@ -9,7 +9,7 @@ class FollowerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
+      padding: const EdgeInsets.only(left: 14, right: 14, bottom: 10),
       child: Row(
         children: [
           Expanded(
@@ -17,7 +17,7 @@ class FollowerWidget extends StatelessWidget {
               child: Row(
                 children: [
                   ImageWidget(name: ImageItemsName().follower_image_1, type: ImageType().png),
-                  const SizedBox(width: 2),
+                  const SizedBox(width: 1),
                   ImageWidget(name: ImageItemsName().follower_image_2, type: ImageType().png),
                 ],
               )),

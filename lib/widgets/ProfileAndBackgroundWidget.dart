@@ -11,10 +11,7 @@ class ProfileAndBackgroundWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       alignment: Alignment.center,
-      children: const [
-        _BackgroundWidget(),
-        _ProfileImageWidget()
-      ],
+      children: const [_BackgroundWidget(), _ProfileImageWidget()],
     );
   }
 }
@@ -33,11 +30,14 @@ class _ProfileImageWidget extends StatelessWidget {
       child: Card(
         color: Colors.white,
         shape: RoundedRectangleBorder(
-            borderRadius: BorderRadiusDirectional.all(
-                Radius.circular(ProjectDimensions().profile_widget_height / 8))),
-        child: ImageWidget(
-          name: ImageItemsName().profile_image,
-          type: ImageType().jpg,
+            borderRadius: BorderRadiusDirectional.all(Radius.circular(ProjectDimensions().profile_widget_height / 8))),
+        clipBehavior: Clip.antiAlias,
+        child: AspectRatio(
+          aspectRatio: 16 / 9,
+          child: ImageWidget(
+            name: ImageItemsName().profile_image,
+            type: ImageType().jpg,
+          ),
         ),
       ),
     );

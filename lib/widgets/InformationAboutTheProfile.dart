@@ -25,23 +25,23 @@ class InformationAboutTheProfile extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-          const IconAndTextWidget(
-            title: "Merkez Mahallesi, Pursaklar ANKARA",
-            icon: Icon(
+          IconAndTextWidget(
+            title: ProjectStrings().txt_home_address,
+            icon: const Icon(
               Icons.home_rounded,
               color: Colors.black,
             ),
           ),
-          const IconAndTextWidget(
-            title: "Pursaklar Sağlık Meslek Lisesi",
-            icon: Icon(
+          IconAndTextWidget(
+            title: ProjectStrings().txt_school_name,
+            icon: const Icon(
               Icons.school_rounded,
               color: Colors.black,
             ),
           ),
-          const IconAndTextWidget(
-            title: "React Native ve Flutter öğreniyor",
-            icon: Icon(
+          IconAndTextWidget(
+            title: ProjectStrings().txt_user_about,
+            icon: const Icon(
               Icons.info_rounded,
               color: Colors.black,
             ),

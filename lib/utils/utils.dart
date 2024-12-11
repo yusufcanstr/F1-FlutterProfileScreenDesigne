@@ -45,6 +45,9 @@ class ProjectStrings {
   final String lorem_ipsum =
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ";
   final String txt_about = "About";
+  final String txt_school_name = "Pursaklar Sağlık Meslek Lisesi";
+  final String txt_home_address = "Merkez Mahallesi, Pursaklar ANKARA";
+  final String txt_user_about = "React Native ve Flutter öğreniyor";
 
   final String txt_fallow = "Fallow";
   final String txt_send_message = "Send Message";

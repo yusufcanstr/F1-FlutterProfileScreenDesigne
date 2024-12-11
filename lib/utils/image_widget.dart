@@ -8,7 +8,7 @@ class ImageWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Image.asset(
       _newNamePath,
-      //fit: BoxFit.cover,
+      fit: BoxFit.cover,
     );
   }
 
